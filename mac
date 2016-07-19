@@ -96,26 +96,17 @@ fi
 fancy_echo "Updating Homebrew formulae ..."
 brew update
 brew bundle --file=- <<EOF
-tap "thoughtbot/formulae"
 tap "homebrew/services"
 
 # Unix
 brew "ctags"
 brew "git"
 brew "openssl"
-brew "rcm"
 brew "reattach-to-user-namespace"
 brew "the_silver_searcher"
 brew "tmux"
 brew "vim"
 brew "zsh"
-
-# Heroku
-brew "heroku-toolbelt"
-brew "parity"
-
-# GitHub
-brew "hub"
 
 # Image manipulation
 brew "imagemagick"
@@ -128,11 +119,16 @@ brew "libyaml" # should come after openssl
 brew "node"
 brew "rbenv"
 brew "ruby-build"
+brew "elixir"
 
 # Databases
 brew "postgres", restart_service: true
+brew "mysql", restart_service: true
 brew "redis", restart_service: true
 EOF
+
+fancy_echo "Configuring MySQL root password ..."
+mysql_secure_installation
 
 fancy_echo "Configuring Ruby ..."
 find_latest_ruby() {
