@@ -43,6 +43,10 @@ if [ ! -f "$HOME/.zshrc" ]; then
   touch "$HOME/.zshrc"
 fi
 
+if [ ! -d "$HOME/code/" ]; then
+  mkdir "$HOME/code"
+fi
+
 # shellcheck disable=SC2016
 append_to_zshrc 'export PATH="$HOME/.bin:$PATH"'
 
@@ -97,6 +101,10 @@ fancy_echo "Updating Homebrew formulae ..."
 brew update
 brew bundle --file=- <<EOF
 tap "homebrew/services"
+tap "caskroom/cask"
+tap "caskroom/versions"
+
+cask_args appdir: '/Applications'
 
 # Unix
 brew "ctags"
@@ -124,11 +132,34 @@ brew "elixir"
 # Databases
 brew "postgres", restart_service: true
 brew "mysql", restart_service: true
+brew "sqlite"
 brew "redis", restart_service: true
-EOF
 
-fancy_echo "Configuring MySQL root password ..."
-mysql_secure_installation
+# Web Server
+# brew "nginx-full"
+
+# Web Browsers
+cask "google-chrome"
+cask "google-chrome-canary"
+
+# Google Tools
+cask "google-drive"
+# cask "chromecast"
+
+# Editors
+# brew "emacs", args: ["with-cocoa", "with-gnutls"]
+cask "atom"
+
+# Virtualization & Containerization ...
+# cask "virtualbox"
+# cask "vagrant"
+
+# Mac App Store
+brew "mas"
+
+# Medias
+brew "spotify"
+EOF
 
 fancy_echo "Configuring Ruby ..."
 find_latest_ruby() {
@@ -156,3 +187,5 @@ if [ -f "$HOME/.laptop.local" ]; then
   # shellcheck disable=SC1090
   . "$HOME/.laptop.local"
 fi
+
+fancy_echo "Run mysql_secure_installation to secure your MySQL root password ..."
