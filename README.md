@@ -98,10 +98,12 @@ Databases:
 
 * [Postgres] for storing relational data
 * [MySQL] for storing relational data
+* [SQLite] for storing relational data
 * [Redis] for storing key-value data
 
 [Postgres]: http://www.postgresql.org/
 [MySQL]: https://www.mysql.com/
+[SQLite]: https://www.sqlite.org
 [Redis]: http://redis.io/
 
 It should take less than 15 minutes to install (depends on your machine).
