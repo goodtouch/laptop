@@ -92,6 +92,7 @@ Programming languages and configuration:
 [Ruby Build]: https://github.com/sstephenson/ruby-build
 [Ruby]: https://www.ruby-lang.org/en/
 [Elixir]: http://elixir-lang.org/
+[Erlang]: https://www.erlang.org/
 
 Databases:
 
