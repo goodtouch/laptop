@@ -113,7 +113,6 @@ brew "openssl"
 brew "reattach-to-user-namespace"
 brew "the_silver_searcher"
 brew "tmux"
-brew "vim"
 brew "zsh"
 
 # Image manipulation
@@ -147,6 +146,7 @@ cask "google-drive"
 # cask "chromecast"
 
 # Editors
+brew "vim"
 # brew "emacs", args: ["with-cocoa", "with-gnutls"]
 cask "atom"
 
@@ -158,7 +158,7 @@ cask "atom"
 brew "mas"
 
 # Medias
-brew "spotify"
+cask "spotify"
 EOF
 
 fancy_echo "Configuring Ruby ..."
