@@ -165,6 +165,9 @@ brew "mas"
 
 # Medias
 cask "spotify"
+# Firewall
+cask "little-snitch"
+
 # Fonts
 cask "font-source-code-pro"
 cask "font-sauce-code-powerline"
@@ -198,3 +201,4 @@ if [ -f "$HOME/.laptop.local" ]; then
 fi
 
 fancy_echo ">> Change your MySQL root password with: mysql_secure_installation"
+fancy_echo ">> Install Little Snitch with: open $(brew cask info little-snitch | grep Caskroom | cut -d' ' -f1)/Little\ Snitch\ Installer.app ..."
