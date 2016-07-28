@@ -153,6 +153,9 @@ brew "vim"
 # brew "emacs", args: ["with-cocoa", "with-gnutls"]
 cask "atom"
 
+# Source code management
+cask "rowanj-gitx"
+
 # Virtualization & Containerization ...
 # cask "virtualbox"
 # cask "vagrant"
