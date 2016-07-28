@@ -177,6 +177,7 @@ cask "karabiner"
 cask "little-snitch"
 
 # Fonts
+brew "fontforge", args: ["use-gcc"]
 cask "font-source-code-pro"
 cask "font-sauce-code-powerline"
 EOF
