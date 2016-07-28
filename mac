@@ -115,6 +115,7 @@ brew "reattach-to-user-namespace"
 brew "the_silver_searcher"
 brew "tmux"
 brew "zsh"
+
 # Terminal
 cask "iterm2-beta"
 
@@ -165,6 +166,10 @@ brew "mas"
 
 # Medias
 cask "spotify"
+
+# Remap keys (replace international keys like ± / §)
+cask "karabiner"
+
 # Firewall
 cask "little-snitch"
 
