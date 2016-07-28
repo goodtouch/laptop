@@ -194,4 +194,4 @@ if [ -f "$HOME/.laptop.local" ]; then
   . "$HOME/.laptop.local"
 fi
 
-fancy_echo "Run mysql_secure_installation to secure your MySQL root password ..."
+fancy_echo ">> Change your MySQL root password with: mysql_secure_installation"
