@@ -103,6 +103,7 @@ brew bundle --file=- <<EOF
 tap "homebrew/services"
 tap "caskroom/cask"
 tap "caskroom/versions"
+tap "caskroom/fonts"
 
 cask_args appdir: '/Applications'
 
@@ -159,6 +160,9 @@ brew "mas"
 
 # Medias
 cask "spotify"
+# Fonts
+cask "font-source-code-pro"
+cask "font-sauce-code-powerline"
 EOF
 
 fancy_echo "Configuring Ruby ..."
