@@ -167,6 +167,9 @@ brew "mas"
 # Medias
 cask "spotify"
 
+# Synchro
+cask "bittorrent-sync"
+
 # Remap keys (replace international keys like ± / §)
 cask "karabiner"
 
