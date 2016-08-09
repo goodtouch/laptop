@@ -107,6 +107,9 @@ tap "caskroom/fonts"
 
 cask_args appdir: '/Applications'
 
+# Mac App Store
+brew "mas"
+
 # Unix
 brew "ctags"
 brew "git"
@@ -141,12 +144,9 @@ brew "redis", restart_service: true
 # Web Server
 # brew "nginx-full"
 
-# Web Browsers
+# Browsers
 cask "google-chrome"
 cask "google-chrome-canary"
-
-# Google Tools
-# cask "chromecast"
 
 # Editors
 brew "vim"
@@ -163,9 +163,6 @@ cask "rowanj-gitx"
 # Design
 cask "sketch"
 cask "sketch-beta"
-
-# Mac App Store
-brew "mas"
 
 # Medias
 cask "spotify"
@@ -187,6 +184,9 @@ cask "karabiner"
 
 # Firewall
 cask "little-snitch"
+
+# Google Tools
+# cask "chromecast"
 
 # Fonts
 brew "fontforge", args: ["use-gcc"]
