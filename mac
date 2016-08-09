@@ -170,7 +170,13 @@ brew "mas"
 # Medias
 cask "spotify"
 
-# Synchro
+# Team / Chat
+cask "discord"
+cask "mattermost"
+cask "skype"
+casl "slack"
+
+# Synchro / Cloud Services
 cask "google-drive"
 cask "sparkleshare"
 cask "dropbox"
