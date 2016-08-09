@@ -127,10 +127,10 @@ brew "qt"
 
 # Programming languages
 brew "libyaml" # should come after openssl
-brew "node"
-brew "rbenv"
 brew "ruby-build"
+brew "rbenv"
 brew "elixir"
+brew "node"
 
 # Databases
 brew "postgres", restart_service: true
@@ -146,7 +146,6 @@ cask "google-chrome"
 cask "google-chrome-canary"
 
 # Google Tools
-cask "google-drive"
 # cask "chromecast"
 
 # Editors
@@ -168,6 +167,9 @@ brew "mas"
 cask "spotify"
 
 # Synchro
+cask "google-drive"
+cask "sparkleshare"
+cask "dropbox"
 cask "bittorrent-sync"
 
 # Remap keys (replace international keys like ± / §)
