@@ -160,6 +160,10 @@ cask "rowanj-gitx"
 # cask "virtualbox"
 # cask "vagrant"
 
+# Design
+cask "sketch"
+cask "sketch-beta"
+
 # Mac App Store
 brew "mas"
 
