@@ -174,7 +174,7 @@ cask "spotify"
 cask "discord"
 cask "mattermost"
 cask "skype"
-casl "slack"
+cask "slack"
 
 # Synchro / Cloud Services
 cask "google-drive"
