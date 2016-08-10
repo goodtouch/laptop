@@ -163,7 +163,7 @@ cask "rowanj-gitx"
 # cask "virtualbox"
 # cask "vagrant"
 
-# Design
+# Graphics & Design
 cask "sketch"
 cask "sketch-beta"
 
@@ -176,7 +176,7 @@ cask "mattermost"
 cask "skype"
 cask "slack"
 
-# Synchro / Cloud Services
+# Sync & Cloud
 cask "google-drive"
 cask "sparkleshare"
 cask "dropbox"
