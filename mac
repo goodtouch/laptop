@@ -156,6 +156,10 @@ brew "vim"
 # brew "emacs", args: ["with-cocoa", "with-gnutls"]
 cask "atom"
 
+# Mobile
+cask "java"
+cask "android-studio"
+
 # Source code management
 cask "rowanj-gitx"
 
