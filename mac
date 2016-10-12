@@ -126,7 +126,7 @@ cask "iterm2-beta"
 brew "imagemagick"
 
 # Testing
-brew "qt"
+brew "qt55"
 
 # Programming languages
 brew "libyaml" # should come after openssl
