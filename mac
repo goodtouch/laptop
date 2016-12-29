@@ -147,7 +147,7 @@ brew "redis", restart_service: true
 # Browsers
 cask "google-chrome"
 cask "google-chrome-canary"
-# cask "firefox"
+cask "firefox"
 # cask "firefoxdeveloperedition"
 # cask "opera"
 
