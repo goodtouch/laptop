@@ -184,7 +184,7 @@ cask "slack"
 cask "google-drive"
 cask "sparkleshare"
 cask "dropbox"
-cask "bittorrent-sync"
+cask "resilio-sync"
 
 # Remap keys (replace international keys like ± / §)
 # cask "karabiner"
