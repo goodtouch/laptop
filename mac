@@ -158,6 +158,7 @@ cask "atom"
 
 # Mobile
 cask "java"
+brew "android-platform-tools" # You can also use the one provided by android-studio (~/Library/Android/sdk/...)
 cask "android-studio"
 
 # Source code management
