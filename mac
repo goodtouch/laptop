@@ -199,7 +199,7 @@ cask "little-snitch"
 # Fonts
 brew "fontforge", args: ["use-gcc"]
 cask "font-source-code-pro"
-cask "font-sauce-code-powerline"
+cask "font-source-code-pro-for-powerline"
 EOF
 
 fancy_echo "Configuring Ruby ..."
