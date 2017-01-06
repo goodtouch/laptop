@@ -114,9 +114,9 @@ brew "mas"
 brew "ctags"
 brew "git"
 brew "openssl"
-brew "reattach-to-user-namespace"
 brew "the_silver_searcher"
 brew "tmux"
+brew "reattach-to-user-namespace"
 brew "zsh"
 
 # Terminal
@@ -172,10 +172,10 @@ cask "rowanj-gitx"
 cask "sketch"
 cask "sketch-beta"
 
-# Medias
+# Media
 cask "spotify"
 
-# Team / Chat
+# Team & Chat
 cask "discord"
 cask "mattermost"
 cask "skype"
