@@ -15,6 +15,7 @@ We support:
 * macOS Mavericks (10.9)
 * macOS Yosemite (10.10)
 * macOS El Capitan (10.11)
+* macOS Sierra (10.12)
 
 Older versions may work but aren't regularly tested. Bug reports for older
 versions are welcome.
@@ -53,17 +54,23 @@ Unix tools:
 
 * [Exuberant Ctags] for indexing files for vim tab completion
 * [Git] for version control
+* [iTerm2] replacement for Terminal
 * [OpenSSL] for Transport Layer Security (TLS)
 * [The Silver Searcher] for finding things in files
 * [Tmux] for saving project state and switching between projects
+* [reattach-to-user-namespace] Reattach process (e.g., tmux) to background (Fix Copy & Paste in Tmux)
 * [Zsh] as your shell
+* [z] to navigate to your most used directories
 
 [Exuberant Ctags]: http://ctags.sourceforge.net/
 [Git]: https://git-scm.com/
+[iTerm2]: https://www.iterm2.com/
 [OpenSSL]: https://www.openssl.org/
 [The Silver Searcher]: https://github.com/ggreer/the_silver_searcher
 [Tmux]: http://tmux.github.io/
+[reattach-to-user-namespace]: https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
 [Zsh]: http://www.zsh.org/
+[z]: https://github.com/rupa/z
 
 Image tools:
 
@@ -79,11 +86,12 @@ Testing tools:
 Programming languages and configuration:
 
 * [Bundler] for managing Ruby libraries
+* [Elixir] and [Erlang] stable
+* [Java]: for writing Android applications
 * [Node.js] and [NPM], for running apps and installing JavaScript packages
 * [Rbenv] for managing versions of Ruby
 * [Ruby Build] for installing Rubies
 * [Ruby] stable for writing general-purpose code
-* [Elixir] and [Erlang] stable
 
 [Bundler]: http://bundler.io/
 [ImageMagick]: http://www.imagemagick.org/
@@ -94,6 +102,7 @@ Programming languages and configuration:
 [Ruby]: https://www.ruby-lang.org/en/
 [Elixir]: http://elixir-lang.org/
 [Erlang]: https://www.erlang.org/
+[Java]: http://www.oracle.com/technetwork/java/
 
 Databases:
 
@@ -106,6 +115,28 @@ Databases:
 [MySQL]: https://www.mysql.com/
 [SQLite]: https://www.sqlite.org
 [Redis]: http://redis.io/
+
+Editors:
+
+* [Atom]: Github hackable text editor
+* [Vim]: Vi "workalike" with many additional features
+
+[Atom]: https://atom.io/
+[Vim]: http://www.vim.org/
+
+Mobile development tools:
+
+* [Android Platform Tools]: Tools for the Android SDK
+* [Android Studio]: Official IDE for Android
+
+[Android Platform Tools]: https://developer.android.com/sdk
+[Android Studio]: https://developer.android.com/studio/index.html
+
+Source code management:
+
+* [GitX-dev]: fork of GitX with some nice improvements
+
+[GitX-dev]: https://rowanj.github.io/gitx/
 
 It should take less than 15 minutes to install (depends on your machine).
 
