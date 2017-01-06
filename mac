@@ -118,6 +118,7 @@ brew "the_silver_searcher"
 brew "tmux"
 brew "reattach-to-user-namespace"
 brew "zsh"
+brew "z"
 
 # Terminal
 cask "iterm2-beta"
