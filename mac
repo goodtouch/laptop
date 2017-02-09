@@ -99,7 +99,7 @@ fi
 
 fancy_echo "Updating Homebrew formulae ..."
 brew update
-brew bundle --file=- <<EOF
+brew bundle --file=- <<RUBY
 tap "homebrew/services"
 tap "caskroom/cask"
 tap "caskroom/versions"
@@ -157,6 +157,9 @@ brew "vim"
 # brew "emacs", args: ["with-cocoa", "with-gnutls"]
 cask "atom"
 
+# Documentation
+cask "dash"
+
 # Mobile
 cask "java"
 brew "android-platform-tools" # You can also use the one provided by android-studio (~/Library/Android/sdk/...)
@@ -201,7 +204,7 @@ cask "little-snitch"
 brew "fontforge", args: ["use-gcc"]
 cask "font-source-code-pro"
 cask "font-source-code-pro-for-powerline"
-EOF
+RUBY
 
 fancy_echo "Configuring Ruby ..."
 find_latest_ruby() {
