@@ -138,6 +138,44 @@ Source code management:
 
 [GitX-dev]: https://rowanj.github.io/gitx/
 
+Virtualization & Containerization:
+
+* virtualbox
+* vagrant
+
+Graphics & Design:
+
+* sketch
+* sketch-beta
+
+Media
+
+* spotify
+
+Team & Chat:
+
+* Discord
+* Mattermost
+* Skype
+* Slack
+
+Sync & Cloud:
+
+* Dropbox
+* Google-drive
+* Resilio-sync
+* Sparkleshare
+
+Firewall:
+
+* little-snitch
+
+Fonts:
+
+* fontforge
+* font-source-code-pro
+* font-source-code-pro-for-powerline
+
 It should take less than 15 minutes to install (depends on your machine).
 
 Customize in `~/.laptop.local`
