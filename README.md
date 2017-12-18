@@ -103,12 +103,11 @@ Testing tools:
 
 Programming languages, package managers, and configuration:
 
+* [ASDF] for managing programming language versions
 * [Bundler] for managing Ruby libraries
 * [Elixir] and [Erlang] stable
 * [Java]: for writing Android applications
 * [Node.js] and [NPM], for running apps and installing JavaScript packages
-* [Rbenv] for managing versions of Ruby
-* [Ruby Build] for installing Rubies
 * [Ruby] stable for writing general-purpose code
 * [Yarn] for managing JavaScript packages
 
@@ -116,8 +115,7 @@ Programming languages, package managers, and configuration:
 [ImageMagick]: http://www.imagemagick.org/
 [Node.js]: http://nodejs.org/
 [NPM]: https://www.npmjs.org/
-[Rbenv]: https://github.com/sstephenson/rbenv
-[Ruby Build]: https://github.com/sstephenson/ruby-build
+[ASDF]: https://github.com/asdf-vm/asdf
 [Ruby]: https://www.ruby-lang.org/en/
 [Elixir]: http://elixir-lang.org/
 [Erlang]: https://www.erlang.org/
