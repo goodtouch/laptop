@@ -185,10 +185,6 @@ if brew list | grep --silent "qt@5.5"; then
   brew link --force qt@5.5
 fi
 
-fancy_echo "Update heroku binary..."
-brew unlink heroku
-brew link --force heroku
-
 fancy_echo "Configuring Ruby ..."
 find_latest_ruby() {
   rbenv install -l | grep -v - | tail -1 | sed -e 's/^ *//'
