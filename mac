@@ -76,7 +76,7 @@ update_shell() {
 
 case "$SHELL" in
   */zsh)
-    if [ "$(which zsh)" != '/bin/zsh' ] ; then
+    if [ "$(which zsh)" != '/usr/local/bin/zsh' ] ; then
       update_shell
     fi
     ;;
@@ -132,6 +132,7 @@ brew "openssl"
 brew "the_silver_searcher"
 brew "tmux"
 brew "reattach-to-user-namespace"
+brew "watchman"
 brew "zsh"
 brew "z"
 

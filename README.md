@@ -1,7 +1,7 @@
 Laptop
 ======
 
-Laptop is a script to set up an macOS laptop for web development.
+Laptop is a script to set up an macOS laptop for web and mobile development.
 
 It can be run multiple times on the same machine safely.
 It installs, upgrades, or skips packages
@@ -17,18 +17,34 @@ We support:
 * macOS El Capitan (10.11)
 * macOS Sierra (10.12)
 
-Older versions may work but aren't regularly tested. Bug reports for older
-versions are welcome.
+Older versions may work but aren't regularly tested.
+Bug reports for older versions are welcome.
 
 Install
 -------
 
-Download, review, then execute the script:
+Download the script:
 
 ```sh
 curl --remote-name https://raw.githubusercontent.com/goodtouch/laptop/master/mac
+```
+
+Review the script (avoid running scripts you haven't read!):
+
+```sh
 less mac
+```
+
+Execute the downloaded script:
+
+```sh
 sh mac 2>&1 | tee ~/laptop.log
+```
+
+Optionally, review the log:
+
+```sh
+less ~/laptop.log
 ```
 
 Optionally, [install thoughtbot/dotfiles][dotfiles].
@@ -59,6 +75,7 @@ Unix tools:
 * [The Silver Searcher] for finding things in files
 * [Tmux] for saving project state and switching between projects
 * [reattach-to-user-namespace] Reattach process (e.g., tmux) to background (Fix Copy & Paste in Tmux)
+* [Watchman] for watching for filesystem events
 * [Zsh] as your shell
 * [z] to navigate to your most used directories
 
@@ -69,6 +86,7 @@ Unix tools:
 [The Silver Searcher]: https://github.com/ggreer/the_silver_searcher
 [Tmux]: http://tmux.github.io/
 [reattach-to-user-namespace]: https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
+[Watchman]: https://facebook.github.io/watchman/
 [Zsh]: http://www.zsh.org/
 [z]: https://github.com/rupa/z
 
