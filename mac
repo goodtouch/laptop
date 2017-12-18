@@ -116,6 +116,7 @@ fancy_echo "Updating Homebrew formulae ..."
 brew update
 brew bundle --file=- <<RUBY
 tap "homebrew/services"
+tap "universal-ctags/universal-ctags"
 tap "caskroom/cask"
 tap "caskroom/versions"
 tap "caskroom/fonts"
@@ -126,7 +127,7 @@ cask_args appdir: '/Applications'
 brew "mas"
 
 # Unix
-brew "ctags"
+brew "universal-ctags", args: ["HEAD"]
 brew "git"
 brew "openssl"
 brew "the_silver_searcher"
@@ -154,10 +155,10 @@ brew "node"
 brew "yarn"
 
 # Databases
-brew "postgres", restart_service: true
-brew "mysql", restart_service: true
+brew "postgres", restart_service: :changed
+brew "mysql", restart_service: :changed
 brew "sqlite"
-brew "redis", restart_service: true
+brew "redis", restart_service: :changed
 
 # Web Server
 # brew "nginx-full"
@@ -227,6 +228,10 @@ RUBY
 fancy_echo "Symlink qmake binary to /usr/local/bin for Capybara Webkit..."
 brew unlink qt@5.5
 brew link --force qt@5.5
+
+fancy_echo "Update heroku binary..."
+brew unlink heroku
+brew link --force heroku
 
 fancy_echo "Configuring Ruby ..."
 find_latest_ruby() {
