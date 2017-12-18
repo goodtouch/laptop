@@ -184,8 +184,8 @@ cask "android-studio"
 cask "rowanj-gitx"
 
 # Virtualization & Containerization ...
-# cask "virtualbox"
-# cask "vagrant"
+cask "virtualbox"
+cask "vagrant"
 
 # Graphics & Design
 cask "sketch"
