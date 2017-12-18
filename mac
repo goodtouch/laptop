@@ -119,12 +119,8 @@ tap "homebrew/services"
 tap "universal-ctags/universal-ctags"
 tap "caskroom/cask"
 tap "caskroom/versions"
-tap "caskroom/fonts"
 
 cask_args appdir: '/Applications'
-
-# Mac App Store
-brew "mas"
 
 # Unix
 brew "universal-ctags", args: ["HEAD"]
@@ -175,54 +171,12 @@ brew "vim"
 # brew "emacs", args: ["with-cocoa", "with-gnutls"]
 cask "atom"
 
-# Documentation
-cask "dash"
-
-# Mobile
-cask "java"
-# brew "android-sdk"
-brew "android-platform-tools" # You can also use the one provided by android-studio (~/Library/Android/sdk/...)
-# cask "android-studio"
-
 # Source code management
 cask "rowanj-gitx"
 
 # Virtualization & Containerization ...
 cask "virtualbox"
 cask "vagrant"
-
-# Graphics & Design
-cask "sketch"
-cask "sketch-beta"
-
-# Media
-cask "spotify"
-
-# Team & Chat
-cask "discord"
-cask "mattermost"
-cask "skype"
-cask "slack"
-
-# Sync & Cloud
-cask "google-drive"
-cask "sparkleshare"
-cask "dropbox"
-cask "resilio-sync"
-
-# Remap keys (replace international keys like ± / §)
-# cask "karabiner"
-
-# Firewall
-cask "little-snitch"
-
-# Google Tools
-# cask "chromecast"
-
-# Fonts
-brew "fontforge", args: ["use-gcc"]
-cask "font-source-code-pro"
-cask "font-source-code-pro-for-powerline"
 RUBY
 
 if brew list | grep --silent "qt@5.5"; then
@@ -263,4 +217,3 @@ if [ -f "$HOME/.laptop.local" ]; then
 fi
 
 fancy_echo ">> Change your MySQL root password with: mysql_secure_installation"
-fancy_echo ">> Install Little Snitch with: open $(brew cask info little-snitch | grep Caskroom | cut -d' ' -f1)/Little\ Snitch\ Installer.app ..."

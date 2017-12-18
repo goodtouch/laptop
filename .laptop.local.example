@@ -1,0 +1,52 @@
+#!/bin/sh
+
+brew bundle --file=- <<RUBY
+tap "caskroom/fonts"
+
+# Mac App Store
+brew "mas"
+
+# Documentation
+cask "dash"
+
+# Mobile
+cask "java"
+# brew "android-sdk"
+brew "android-platform-tools" # You can also use the one provided by android-studio (~/Library/Android/sdk/...)
+# cask "android-studio"
+
+# Graphics & Design
+cask "sketch"
+cask "sketch-beta"
+
+# Media
+cask "spotify"
+
+# Team & Chat
+cask "discord"
+cask "mattermost"
+cask "skype"
+cask "slack"
+
+# Sync & Cloud
+cask "google-drive"
+# cask "sparkleshare"
+cask "dropbox"
+cask "resilio-sync"
+
+# Remap keys (replace international keys like ± / §)
+# cask "karabiner"
+
+# Firewall
+cask "little-snitch"
+
+# Google Tools
+# cask "chromecast"
+
+# Fonts
+brew "fontforge", args: ["use-gcc"]
+cask "font-source-code-pro"
+cask "font-source-code-pro-for-powerline"
+RUBY
+
+fancy_echo ">> Install Little Snitch with: open $(brew cask info little-snitch | grep Caskroom | cut -d' ' -f1)/Little\ Snitch\ Installer.app ..."
