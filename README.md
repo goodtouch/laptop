@@ -83,7 +83,7 @@ Testing tools:
 [Qt 5]: http://qt-project.org/
 [Capybara Webkit]: https://github.com/thoughtbot/capybara-webkit
 
-Programming languages and configuration:
+Programming languages, package managers, and configuration:
 
 * [Bundler] for managing Ruby libraries
 * [Elixir] and [Erlang] stable
@@ -92,6 +92,7 @@ Programming languages and configuration:
 * [Rbenv] for managing versions of Ruby
 * [Ruby Build] for installing Rubies
 * [Ruby] stable for writing general-purpose code
+* [Yarn] for managing JavaScript packages
 
 [Bundler]: http://bundler.io/
 [ImageMagick]: http://www.imagemagick.org/
@@ -103,6 +104,7 @@ Programming languages and configuration:
 [Elixir]: http://elixir-lang.org/
 [Erlang]: https://www.erlang.org/
 [Java]: http://www.oracle.com/technetwork/java/
+[Yarn]: https://yarnpkg.com/en/
 
 Databases:
 
@@ -266,7 +268,7 @@ and may be redistributed under the terms specified in the [LICENSE] file.
 About thoughtbot
 ----------------
 
-![thoughtbot](https://thoughtbot.com/logo.png)
+![thoughtbot](http://presskit.thoughtbot.com/images/thoughtbot-logo-for-readmes.svg)
 
 Laptop is maintained and funded by thoughtbot, inc.
 The names and logos for thoughtbot are trademarks of thoughtbot, inc.

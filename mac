@@ -142,14 +142,15 @@ cask "iterm2-beta"
 brew "imagemagick"
 
 # Testing
-brew "qt55"
+brew "qt@5.5"
 
-# Programming languages
+# Programming languages and package managers
 brew "libyaml" # should come after openssl
 brew "ruby-build"
 brew "rbenv"
 brew "elixir"
 brew "node"
+brew "yarn"
 
 # Databases
 brew "postgres", restart_service: true
@@ -221,6 +222,10 @@ brew "fontforge", args: ["use-gcc"]
 cask "font-source-code-pro"
 cask "font-source-code-pro-for-powerline"
 RUBY
+
+fancy_echo "Symlink qmake binary to /usr/local/bin for Capybara Webkit..."
+brew unlink qt@5.5
+brew link --force qt@5.5
 
 fancy_echo "Configuring Ruby ..."
 find_latest_ruby() {
