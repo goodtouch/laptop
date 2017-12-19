@@ -68,24 +68,24 @@ macOS tools:
 
 Unix tools:
 
-* [Exuberant Ctags] for indexing files for vim tab completion
 * [Git] for version control
 * [iTerm2] replacement for Terminal
 * [OpenSSL] for Transport Layer Security (TLS)
 * [The Silver Searcher] for finding things in files
 * [Tmux] for saving project state and switching between projects
 * [reattach-to-user-namespace] Reattach process (e.g., tmux) to background (Fix Copy & Paste in Tmux)
+* [Universal Ctags] for indexing files for vim tab completion
 * [Watchman] for watching for filesystem events
 * [Zsh] as your shell
 * [z] to navigate to your most used directories
 
-[Exuberant Ctags]: http://ctags.sourceforge.net/
 [Git]: https://git-scm.com/
 [iTerm2]: https://www.iterm2.com/
 [OpenSSL]: https://www.openssl.org/
 [The Silver Searcher]: https://github.com/ggreer/the_silver_searcher
 [Tmux]: http://tmux.github.io/
 [reattach-to-user-namespace]: https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
+[Universal Ctags]: https://github.com/universal-ctags/ctags
 [Watchman]: https://facebook.github.io/watchman/
 [Zsh]: http://www.zsh.org/
 [z]: https://github.com/rupa/z
