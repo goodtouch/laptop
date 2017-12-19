@@ -136,7 +136,7 @@ brew "z"
 cask "iterm2-beta"
 
 # Image manipulation
-brew "imagemagick"
+brew "imagemagick@6"
 
 # Testing
 brew "qt@5.5" if MacOS::Xcode.installed?
