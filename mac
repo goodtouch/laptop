@@ -204,6 +204,12 @@ install_asdf_language() {
   local version
   version="$(asdf list-all "$language" | tail -1)"
 
+  # install precompiled Elixir with the most recent Erlang OTP version installed
+  if [ "$language" = "elixir" ]; then
+    local erlang_version="$(asdf list erlang | tail -1 | cut -d . -f 1| cut -d . -f 1 | tr -d '[:space:]')"
+    version="${version}-otp-${erlang_version}"
+  fi
+
   if ! asdf list "$language" | grep -Fq "$version"; then
     asdf install "$language" "$version"
     asdf global "$language" "$version"
