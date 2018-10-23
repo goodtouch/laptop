@@ -163,7 +163,8 @@ cask "firefox"
 # Editors
 brew "vim"
 # brew "emacs", args: ["with-cocoa", "with-gnutls"]
-cask "atom"
+# cask "atom"
+cask "visual-studio-code"
 
 # Source code management
 cask "rowanj-gitx"
