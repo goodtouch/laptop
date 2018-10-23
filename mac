@@ -172,6 +172,7 @@ cask "rowanj-gitx"
 # Virtualization & Containerization ...
 cask "virtualbox"
 cask "vagrant"
+cask "docker"
 RUBY
 
 fancy_echo "Configuring asdf version manager..."
