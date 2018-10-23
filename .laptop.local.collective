@@ -1,0 +1,91 @@
+#!/bin/sh
+# This is the .laptop.local file we use in the team
+# Usage:
+# curl --remote-name https://raw.githubusercontent.com/goodtouch/laptop/master/mac
+# curl https://raw.githubusercontent.com/goodtouch/laptop/master/.laptop.local.collective -o ~/.laptop.local
+# sh mac 2>&1 | tee ~/laptop.log
+brew bundle --file=- <<RUBY
+# Unix
+brew "git"
+brew "openssl"
+brew "tmux"
+brew "reattach-to-user-namespace"
+brew "zsh"
+
+# Terminal
+cask "iterm2-beta"
+
+# Image manipulation
+brew "imagemagick@6"
+
+# Testing
+cask "chromedriver"
+
+# Programming language prerequisites and package managers
+brew "libyaml" # should come after openssl
+brew "coreutils"
+brew "automake"
+brew "autoconf"
+brew "libxslt"
+brew "libtool"
+brew "unixodbc" # Erlang
+brew "yarn"
+brew "gnupg2"
+
+# Databases
+brew "postgres", start_service: nil, restart_service: nil
+brew "mysql", start_service: nil, restart_service: nil
+brew "sqlite"
+brew "redis", start_service: nil, restart_service: nil
+
+# Browsers
+cask "google-chrome"
+cask "google-chrome-canary"
+cask "firefox"
+cask "firefox-developer-edition"
+
+# Editors
+brew "vim"
+cask "visual-studio-code"
+
+# Source code management
+cask "rowanj-gitx"
+
+# Virtualization & Containerization ...
+cask "virtualbox"
+cask "vagrant"
+cask "docker"
+
+# Documentation
+cask "dash"
+
+# Team & Chat
+cask "discord"
+cask "mattermost"
+cask "slack"
+RUBY
+
+# Already in ./mac for now
+# install_asdf_plugin "ruby" "https://github.com/asdf-vm/asdf-ruby.git"
+# install_asdf_plugin "nodejs" "https://github.com/asdf-vm/asdf-nodejs.git"
+
+install_asdf_plugin "erlang" "https://github.com/asdf-vm/asdf-erlang.git"
+install_asdf_plugin "elixir" "https://github.com/asdf-vm/asdf-elixir.git"
+
+# Already in ./mac for now
+# fancy_echo "Installing latest Ruby..."
+# install_asdf_language "ruby"
+# gem update --system
+# gem_install_or_update "bundler"
+# number_of_cores=$(sysctl -n hw.ncpu)
+# bundle config --global jobs $((number_of_cores - 1))
+
+# fancy_echo "Installing latest Node..."
+# bash "$HOME/.asdf/plugins/nodejs/bin/import-release-team-keyring"
+# install_asdf_language "nodejs"
+
+fancy_echo "Installing latest Erlang..."
+install_asdf_language "erlang"
+
+fancy_echo "Installing latest Elixir..."
+install_asdf_language "elixir"
