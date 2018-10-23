@@ -138,6 +138,9 @@ cask "iterm2-beta"
 # Image manipulation
 brew "imagemagick@6"
 
+# Testing
+cask "chromedriver"
+
 # Programming language prerequisites and package managers
 brew "libyaml" # should come after openssl
 brew "coreutils"
