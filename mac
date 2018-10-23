@@ -164,7 +164,7 @@ brew "redis", restart_service: :changed
 cask "google-chrome"
 cask "google-chrome-canary"
 cask "firefox"
-# cask "firefoxdeveloperedition"
+# cask "firefox-developer-edition"
 # cask "opera"
 
 # Editors
