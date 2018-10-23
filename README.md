@@ -96,10 +96,11 @@ Image tools:
 
 Testing tools:
 
-* [Qt 5] for headless JavaScript testing via [Capybara Webkit]
+* [ChromeDriver] for headless JavaScript testing via [Capybara] and [Selenium Webdriver]
 
-[Qt 5]: http://qt-project.org/
-[Capybara Webkit]: https://github.com/thoughtbot/capybara-webkit
+[ChromeDriver]: https://sites.google.com/a/chromium.org/chromedriver/
+[Capybara]: https://github.com/teamcapybara/capybara
+[Selenium Webdriver]: https://github.com/teamcapybara/capybara#selenium
 
 Programming languages, package managers, and configuration:
 
