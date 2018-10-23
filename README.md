@@ -158,6 +158,7 @@ Virtualization & Containerization:
 
 * virtualbox
 * vagrant
+* docker
 
 It should take less than 15 minutes to install (depends on your machine).
 
