@@ -106,7 +106,6 @@ Programming languages, package managers, and configuration:
 
 * [ASDF] for managing programming language versions
 * [Bundler] for managing Ruby libraries
-* [Elixir] and [Erlang] stable
 * [Java]: for writing Android applications
 * [Node.js] and [NPM], for running apps and installing JavaScript packages
 * [Ruby] stable for writing general-purpose code
@@ -118,8 +117,6 @@ Programming languages, package managers, and configuration:
 [NPM]: https://www.npmjs.org/
 [ASDF]: https://github.com/asdf-vm/asdf
 [Ruby]: https://www.ruby-lang.org/en/
-[Elixir]: http://elixir-lang.org/
-[Erlang]: https://www.erlang.org/
 [Java]: http://www.oracle.com/technetwork/java/
 [Yarn]: https://yarnpkg.com/en/
 
@@ -249,6 +246,20 @@ can be used in your `~/.laptop.local`.
 
 See the [wiki](https://github.com/thoughtbot/laptop/wiki)
 for more customization examples.
+
+.laptop.local.example
+---------------------
+
+In the `.laptop.local.example` file, you'll find how to customize your `.laptop.local` file to install:
+
+Programming languages, package managers, and configuration:
+
+* [Elixir] and [Erlang] stable
+* [Go] stable
+
+[Elixir]: http://elixir-lang.org/
+[Erlang]: https://www.erlang.org/
+[Go]: https://golang.org/
 
 Contributing
 ------------
