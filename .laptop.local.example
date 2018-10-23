@@ -28,6 +28,9 @@ cask "mattermost"
 cask "skype"
 cask "slack"
 
+# Office
+cask "libreoffice"
+
 # Sync & Cloud
 cask "google-drive"
 # cask "sparkleshare"
