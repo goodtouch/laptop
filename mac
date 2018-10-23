@@ -138,9 +138,6 @@ cask "iterm2-beta"
 # Image manipulation
 brew "imagemagick@6"
 
-# Testing
-brew "qt@5.5" if MacOS::Xcode.installed?
-
 # Programming language prerequisites and package managers
 brew "libyaml" # should come after openssl
 brew "coreutils"
@@ -175,12 +172,6 @@ cask "rowanj-gitx"
 cask "virtualbox"
 cask "vagrant"
 RUBY
-
-if brew list | grep --silent "qt@5.5"; then
-  fancy_echo "Symlink qmake binary to /usr/local/bin for Capybara Webkit..."
-  brew unlink qt@5.5
-  brew link --force qt@5.5
-fi
 
 fancy_echo "Configuring asdf version manager..."
 if [ ! -d "$HOME/.asdf" ]; then
