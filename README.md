@@ -140,14 +140,6 @@ Editors:
 [Visual Studio Code]: https://code.visualstudio.com/
 [Vim]: http://www.vim.org/
 
-Mobile development tools:
-
-* [Android Platform Tools]: Tools for the Android SDK
-* [Android Studio]: Official IDE for Android
-
-[Android Platform Tools]: https://developer.android.com/sdk
-[Android Studio]: https://developer.android.com/studio/index.html
-
 Source code management:
 
 * [GitX-dev]: fork of GitX with some nice improvements
@@ -228,6 +220,14 @@ Programming languages, package managers, and configuration:
 [Elixir]: http://elixir-lang.org/
 [Erlang]: https://www.erlang.org/
 [Go]: https://golang.org/
+
+Mobile development tools:
+
+* [Android Platform Tools]: Tools for the Android SDK
+* [Android Studio]: Official IDE for Android
+
+[Android Platform Tools]: https://developer.android.com/sdk
+[Android Studio]: https://developer.android.com/studio/index.html
 
 Graphics & Design:
 
