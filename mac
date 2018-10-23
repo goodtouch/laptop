@@ -141,6 +141,10 @@ brew "imagemagick@6"
 # Programming language prerequisites and package managers
 brew "libyaml" # should come after openssl
 brew "coreutils"
+brew "automake"
+brew "autoconf"
+brew "libxslt"
+brew "libtool"
 brew "yarn"
 brew "gnupg2"
 
