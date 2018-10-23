@@ -134,10 +134,10 @@ Databases:
 
 Editors:
 
-* [Atom]: Github hackable text editor
+* [Visual Studio Code]: Microsoft hackable text editor
 * [Vim]: Vi "workalike" with many additional features
 
-[Atom]: https://atom.io/
+[Visual Studio Code]: https://code.visualstudio.com/
 [Vim]: http://www.vim.org/
 
 Mobile development tools:
