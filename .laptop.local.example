@@ -39,6 +39,7 @@ cask "resilio-sync"
 
 # Remap keys (replace international keys like ± / §)
 # cask "karabiner"
+# cask "karabiner-elements"
 
 # Firewall
 cask "little-snitch"
